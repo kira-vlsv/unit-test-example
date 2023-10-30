@@ -17,7 +17,7 @@ export class NumbersValidator {
    * @return {Array<Number>} array of even numbers
    */
   getEvenNumbersFromArray(arrayOfNumbers) {
-    if (Array.isArray(arrayOfNumbers) && arrayOfNumbers.every(item => typeof item === 'number')) {
+    if (Array.isArray(arrayOfNumbers) && arrayOfNumbers.every((item) => typeof item === 'number')) {
       return arrayOfNumbers.filter(this.isNumberEven);
     }
     throw new Error(`[${arrayOfNumbers}] is not an array of "Numbers"`);
@@ -31,7 +31,7 @@ export class NumbersValidator {
     if (!Array.isArray(arrayOfNumbers)) {
       throw new Error(`[${arrayOfNumbers}] is not an array`);
     }
-    return arrayOfNumbers.every(n => typeof n === 'number');
+    return arrayOfNumbers.every((n) => typeof n === 'number');
   }
 
   /**
