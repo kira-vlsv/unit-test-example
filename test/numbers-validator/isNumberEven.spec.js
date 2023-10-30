@@ -45,7 +45,7 @@ describe('Check getEvenNumbersFromArray method', () => {
       validator.getEvenNumbersFromArray(['8', '67']);
     }).to.throw(`[8,67] is not an array of "Numbers"`);
   });
-})
+});
 
 describe('Check isAllNumbers method', () => {
   it('should return true if all elements are numbers', () => {
@@ -63,7 +63,7 @@ describe('Check isAllNumbers method', () => {
       validator.isAllNumbers('8');
     }).to.throw(`[8] is not an array`);
   });
-})
+});
 
 describe('Check isInteger method', () => {
   it('should return true if integer is provided', () => {
@@ -75,4 +75,4 @@ describe('Check isInteger method', () => {
       validator.isInteger('6');
     }).to.throw(`[6] is not a number`);
   });
-})
+});
