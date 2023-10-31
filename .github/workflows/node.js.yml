@@ -38,13 +38,12 @@ jobs:
         path: gh-pages
         
     - name: Move files
-      run: |
-        mv ./mochawesome-report/mochawesome.html ./mochawesome-report/index.html
+      run: mv ./mochawesome-report/mochawesome.html ./mochawesome-report/index.html
     
     - name: Publish Report
       if: always()
       uses: peaceiris/actions-gh-pages@v3
       env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./mochawesome-report
