@@ -1,0 +1,369 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-31T18:48:10.211Z",
+    "end": "2023-10-31T18:48:10.236Z",
+    "duration": 25,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "94c6b828-6801-44ca-8ca8-8b80025d12d2",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [
+        {
+          "title": "\"before each\" hook in \"{root}\"",
+          "fullTitle": "\"before each\" hook in \"{root}\"",
+          "timedOut": false,
+          "duration": 0,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "validator = new NumbersValidator();",
+          "err": {},
+          "uuid": "77764970-b518-4ff9-9d4f-5f72b800a79b",
+          "parentUUID": "94c6b828-6801-44ca-8ca8-8b80025d12d2",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [
+        {
+          "title": "\"after each\" hook in \"{root}\"",
+          "fullTitle": "\"after each\" hook in \"{root}\"",
+          "timedOut": false,
+          "duration": 0,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "validator = null;",
+          "err": {},
+          "uuid": "687a2168-4757-42c9-ba65-9f7fecf40418",
+          "parentUUID": "94c6b828-6801-44ca-8ca8-8b80025d12d2",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e5e00d2-fbd0-4527-83b6-6bf56dbebc6e",
+          "title": "Check isNumberEven method",
+          "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
+          "file": "/test/numbers-validator/isNumberEven.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true when even number is provided",
+              "fullTitle": "Check isNumberEven method should return true when even number is provided",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isNumberEven(4);\n// chai feature\nexpect(validationResults).to.be.equal(true);",
+              "err": {},
+              "uuid": "2061f9ec-b213-4874-b763-10f0e9bb7859",
+              "parentUUID": "9e5e00d2-fbd0-4527-83b6-6bf56dbebc6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return false when odd number is provided",
+              "fullTitle": "Check isNumberEven method should return false when odd number is provided",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isNumberEven(5);\n// chai feature\nexpect(validationResults).to.be.equal(false);",
+              "err": {},
+              "uuid": "d7f74ec8-022a-48a0-a4bd-8fce3aa97468",
+              "parentUUID": "9e5e00d2-fbd0-4527-83b6-6bf56dbebc6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error when string is provided",
+              "fullTitle": "Check isNumberEven method should throw an error when string is provided",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  validator.isNumberEven('4');\n}).to.throw(`[4] is not of type \"Number\" it is of type \"string\"`);",
+              "err": {},
+              "uuid": "ce65a228-7490-4f9a-881e-d59b25f80867",
+              "parentUUID": "9e5e00d2-fbd0-4527-83b6-6bf56dbebc6e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2061f9ec-b213-4874-b763-10f0e9bb7859",
+            "d7f74ec8-022a-48a0-a4bd-8fce3aa97468",
+            "ce65a228-7490-4f9a-881e-d59b25f80867"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d91f0736-04b9-4723-82bf-5f38a1645df7",
+          "title": "Check getEvenNumbersFromArray method",
+          "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
+          "file": "/test/numbers-validator/isNumberEven.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true of even numbers",
+              "fullTitle": "Check getEvenNumbersFromArray method should return true of even numbers",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.getEvenNumbersFromArray([2, 5, 8, 67]);\nexpect(validationResults).to.have.all.members([2, 8]);",
+              "err": {},
+              "uuid": "ace5a36a-78f3-46af-85a8-af4b8da74d5e",
+              "parentUUID": "d91f0736-04b9-4723-82bf-5f38a1645df7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error when array of strings is provided",
+              "fullTitle": "Check getEvenNumbersFromArray method should throw an error when array of strings is provided",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  validator.getEvenNumbersFromArray(['8', '67']);\n}).to.throw(`[8,67] is not an array of \"Numbers\"`);",
+              "err": {},
+              "uuid": "4e1d6cc0-1165-4a7a-879a-ecbd0786b76a",
+              "parentUUID": "d91f0736-04b9-4723-82bf-5f38a1645df7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ace5a36a-78f3-46af-85a8-af4b8da74d5e",
+            "4e1d6cc0-1165-4a7a-879a-ecbd0786b76a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "64b39aac-c63e-4667-829e-e8df00699ec5",
+          "title": "Check isAllNumbers method",
+          "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
+          "file": "/test/numbers-validator/isNumberEven.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true if all elements are numbers",
+              "fullTitle": "Check isAllNumbers method should return true if all elements are numbers",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isAllNumbers([4, 8, 10, 44]);\nexpect(validationResults).to.be.equal(true);",
+              "err": {},
+              "uuid": "ccf38be3-de34-4e47-bd31-50f228a650cd",
+              "parentUUID": "64b39aac-c63e-4667-829e-e8df00699ec5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return false if not all elements are numbers",
+              "fullTitle": "Check isAllNumbers method should return false if not all elements are numbers",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isAllNumbers([4, 8, '9', 44]);\nexpect(validationResults).to.be.equal(false);",
+              "err": {},
+              "uuid": "44d88233-c751-4155-a964-5c23ff3f4199",
+              "parentUUID": "64b39aac-c63e-4667-829e-e8df00699ec5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error when not array is provided",
+              "fullTitle": "Check isAllNumbers method should throw an error when not array is provided",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  validator.isAllNumbers('8');\n}).to.throw(`[8] is not an array`);",
+              "err": {},
+              "uuid": "00dcbeca-e329-4162-9e2b-2f72ca689d5b",
+              "parentUUID": "64b39aac-c63e-4667-829e-e8df00699ec5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ccf38be3-de34-4e47-bd31-50f228a650cd",
+            "44d88233-c751-4155-a964-5c23ff3f4199",
+            "00dcbeca-e329-4162-9e2b-2f72ca689d5b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8e87e52f-e968-4bc6-b265-abb6f65b7ac8",
+          "title": "Check isInteger method",
+          "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
+          "file": "/test/numbers-validator/isNumberEven.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true if integer is provided",
+              "fullTitle": "Check isInteger method should return true if integer is provided",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(validator.isInteger(4)).to.be.equal(true);",
+              "err": {},
+              "uuid": "a886bf3d-d757-4862-abd9-66e1076bd00f",
+              "parentUUID": "8e87e52f-e968-4bc6-b265-abb6f65b7ac8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error if string is provided",
+              "fullTitle": "Check isInteger method should throw an error if string is provided",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  validator.isInteger('6');\n}).to.throw(`[6] is not a number`);",
+              "err": {},
+              "uuid": "c28713f4-0414-4379-bbfc-e5fcc7d46fa1",
+              "parentUUID": "8e87e52f-e968-4bc6-b265-abb6f65b7ac8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a886bf3d-d757-4862-abd9-66e1076bd00f",
+            "c28713f4-0414-4379-bbfc-e5fcc7d46fa1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
