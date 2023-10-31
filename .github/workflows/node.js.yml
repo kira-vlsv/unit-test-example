@@ -37,14 +37,13 @@ jobs:
         ref: gh-pages
         path: gh-pages
         
-    # - name: Move files
-    #   run: |
-    #     mkdir ./mochawesome-report
-    #     mv ./mochawesome-report/mochawesome.html ./mochawesome-report/
+    - name: Move files
+      run: |
+        mv ./mochawesome-report/mochawesome.html ./mochawesome-report/index.html
     
     - name: Publish Report
       if: always()
-      uses: peaceiris/actions-gh-pages@v2
+      uses: peaceiris/actions-gh-pages@v3
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
