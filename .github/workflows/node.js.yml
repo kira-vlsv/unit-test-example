@@ -29,6 +29,13 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+
+    - name: Copy History
+      uses: actions/checkout@v2
+      if: always()
+      with:
+        ref: gh-pages
+        path: gh-pages
     
     - name: Publish Report
       if: always()
