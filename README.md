@@ -1,8 +1,10 @@
 # unit-test-example
 Unit test with JS, mocha, chai, mochawesome, husky, c8
 
-### npm test - to run tests
-### npm run coverage - to check coverage
+<p>
+npm test - to run tests
+npm run coverage - to check coverage
+</p>
 
 ## Check code style:
 1. npm run prepare
