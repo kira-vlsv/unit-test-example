@@ -5,9 +5,9 @@
     "passes": 10,
     "pending": 0,
     "failures": 0,
-    "start": "2023-10-31T18:52:45.694Z",
-    "end": "2023-10-31T18:52:45.703Z",
-    "duration": 9,
+    "start": "2023-10-31T18:54:16.381Z",
+    "end": "2023-10-31T18:54:16.407Z",
+    "duration": 26,
     "testsRegistered": 10,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8b82d7e9-ea2b-49fc-b989-0998bb9d77c3",
+      "uuid": "0e929189-3fcd-492b-99e1-a63e005cf82c",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -36,8 +36,8 @@
           "context": null,
           "code": "validator = new NumbersValidator();",
           "err": {},
-          "uuid": "f6fdf57c-f3c0-4a62-9188-e6df9bb054ef",
-          "parentUUID": "8b82d7e9-ea2b-49fc-b989-0998bb9d77c3",
+          "uuid": "60e676a0-b6cb-4cc4-8883-d36202b0eccb",
+          "parentUUID": "0e929189-3fcd-492b-99e1-a63e005cf82c",
           "isHook": true,
           "skipped": false
         }
@@ -56,8 +56,8 @@
           "context": null,
           "code": "validator = null;",
           "err": {},
-          "uuid": "5cb6c097-dbcc-4e49-ab8d-fa73cdc0b3c4",
-          "parentUUID": "8b82d7e9-ea2b-49fc-b989-0998bb9d77c3",
+          "uuid": "ec54bd35-4119-455f-a70b-1cefb4b655f0",
+          "parentUUID": "0e929189-3fcd-492b-99e1-a63e005cf82c",
           "isHook": true,
           "skipped": false
         }
@@ -65,7 +65,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6cb1bf24-dd84-4b3f-9753-287753615db3",
+          "uuid": "960de168-a788-458f-8c34-0104302dd964",
           "title": "Check isNumberEven method",
           "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
           "file": "/test/numbers-validator/isNumberEven.spec.js",
@@ -85,8 +85,8 @@
               "context": null,
               "code": "const validationResults = validator.isNumberEven(4);\n// chai feature\nexpect(validationResults).to.be.equal(true);",
               "err": {},
-              "uuid": "14dd39b3-2e0c-4404-9993-4a2315f840ef",
-              "parentUUID": "6cb1bf24-dd84-4b3f-9753-287753615db3",
+              "uuid": "e4acddb6-c205-4421-8f38-6924b2738e58",
+              "parentUUID": "960de168-a788-458f-8c34-0104302dd964",
               "isHook": false,
               "skipped": false
             },
@@ -103,8 +103,8 @@
               "context": null,
               "code": "const validationResults = validator.isNumberEven(5);\n// chai feature\nexpect(validationResults).to.be.equal(false);",
               "err": {},
-              "uuid": "c6183f2d-bbec-40f1-bbf2-45852925faff",
-              "parentUUID": "6cb1bf24-dd84-4b3f-9753-287753615db3",
+              "uuid": "4e86cd8d-c94b-4077-b3ea-905ac2778060",
+              "parentUUID": "960de168-a788-458f-8c34-0104302dd964",
               "isHook": false,
               "skipped": false
             },
@@ -121,17 +121,17 @@
               "context": null,
               "code": "expect(() => {\n  validator.isNumberEven('4');\n}).to.throw(`[4] is not of type \"Number\" it is of type \"string\"`);",
               "err": {},
-              "uuid": "0ca3d8f7-5c25-4714-a814-c219b80208c6",
-              "parentUUID": "6cb1bf24-dd84-4b3f-9753-287753615db3",
+              "uuid": "4400b5a4-8a25-4a15-8516-ae8fb7c8b821",
+              "parentUUID": "960de168-a788-458f-8c34-0104302dd964",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "14dd39b3-2e0c-4404-9993-4a2315f840ef",
-            "c6183f2d-bbec-40f1-bbf2-45852925faff",
-            "0ca3d8f7-5c25-4714-a814-c219b80208c6"
+            "e4acddb6-c205-4421-8f38-6924b2738e58",
+            "4e86cd8d-c94b-4077-b3ea-905ac2778060",
+            "4400b5a4-8a25-4a15-8516-ae8fb7c8b821"
           ],
           "failures": [],
           "pending": [],
@@ -142,7 +142,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "59183ff8-7dda-45c2-a905-d3b2e13d4e2b",
+          "uuid": "4b85d636-23c5-4b8f-9ead-5892994925a1",
           "title": "Check getEvenNumbersFromArray method",
           "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
           "file": "/test/numbers-validator/isNumberEven.spec.js",
@@ -162,8 +162,8 @@
               "context": null,
               "code": "const validationResults = validator.getEvenNumbersFromArray([2, 5, 8, 67]);\nexpect(validationResults).to.have.all.members([2, 8]);",
               "err": {},
-              "uuid": "1aefc0ee-b684-42db-adf4-8c3b0c4a2e5a",
-              "parentUUID": "59183ff8-7dda-45c2-a905-d3b2e13d4e2b",
+              "uuid": "6c063520-00ac-473f-bec6-ab860e0216c2",
+              "parentUUID": "4b85d636-23c5-4b8f-9ead-5892994925a1",
               "isHook": false,
               "skipped": false
             },
@@ -180,16 +180,16 @@
               "context": null,
               "code": "expect(() => {\n  validator.getEvenNumbersFromArray(['8', '67']);\n}).to.throw(`[8,67] is not an array of \"Numbers\"`);",
               "err": {},
-              "uuid": "12b02028-c14e-4955-9095-3183cb539499",
-              "parentUUID": "59183ff8-7dda-45c2-a905-d3b2e13d4e2b",
+              "uuid": "82f0f2ef-3297-4ff8-be27-cf783cca6d43",
+              "parentUUID": "4b85d636-23c5-4b8f-9ead-5892994925a1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1aefc0ee-b684-42db-adf4-8c3b0c4a2e5a",
-            "12b02028-c14e-4955-9095-3183cb539499"
+            "6c063520-00ac-473f-bec6-ab860e0216c2",
+            "82f0f2ef-3297-4ff8-be27-cf783cca6d43"
           ],
           "failures": [],
           "pending": [],
@@ -200,7 +200,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "8a4f3a18-c6fd-4d92-9e3a-37844196819e",
+          "uuid": "ff24324e-53bd-4f47-9f68-e8485e4f5ec7",
           "title": "Check isAllNumbers method",
           "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
           "file": "/test/numbers-validator/isNumberEven.spec.js",
@@ -220,8 +220,8 @@
               "context": null,
               "code": "const validationResults = validator.isAllNumbers([4, 8, 10, 44]);\nexpect(validationResults).to.be.equal(true);",
               "err": {},
-              "uuid": "c3a93cb3-d523-404d-b6b4-4febb63ba6a8",
-              "parentUUID": "8a4f3a18-c6fd-4d92-9e3a-37844196819e",
+              "uuid": "3692624c-6c29-4801-ab8f-f960cb17e4e4",
+              "parentUUID": "ff24324e-53bd-4f47-9f68-e8485e4f5ec7",
               "isHook": false,
               "skipped": false
             },
@@ -229,7 +229,7 @@
               "title": "should return false if not all elements are numbers",
               "fullTitle": "Check isAllNumbers method should return false if not all elements are numbers",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -238,8 +238,8 @@
               "context": null,
               "code": "const validationResults = validator.isAllNumbers([4, 8, '9', 44]);\nexpect(validationResults).to.be.equal(false);",
               "err": {},
-              "uuid": "97c5eec9-d0f5-401e-9be7-17fc49650b10",
-              "parentUUID": "8a4f3a18-c6fd-4d92-9e3a-37844196819e",
+              "uuid": "8fe4eba0-1570-4ac6-afce-dcd2ac3bc524",
+              "parentUUID": "ff24324e-53bd-4f47-9f68-e8485e4f5ec7",
               "isHook": false,
               "skipped": false
             },
@@ -256,28 +256,28 @@
               "context": null,
               "code": "expect(() => {\n  validator.isAllNumbers('8');\n}).to.throw(`[8] is not an array`);",
               "err": {},
-              "uuid": "a6cd4b26-31f3-40f5-8499-f911b79dcc43",
-              "parentUUID": "8a4f3a18-c6fd-4d92-9e3a-37844196819e",
+              "uuid": "10e5b6da-60c2-4bf8-9c94-c0fb4970af6b",
+              "parentUUID": "ff24324e-53bd-4f47-9f68-e8485e4f5ec7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c3a93cb3-d523-404d-b6b4-4febb63ba6a8",
-            "97c5eec9-d0f5-401e-9be7-17fc49650b10",
-            "a6cd4b26-31f3-40f5-8499-f911b79dcc43"
+            "3692624c-6c29-4801-ab8f-f960cb17e4e4",
+            "8fe4eba0-1570-4ac6-afce-dcd2ac3bc524",
+            "10e5b6da-60c2-4bf8-9c94-c0fb4970af6b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "5fdc8a41-ab71-4884-a899-6208daf01005",
+          "uuid": "b3aa69cc-f139-4a37-a7f9-07bfa9f1d4f8",
           "title": "Check isInteger method",
           "fullFile": "/home/runner/work/unit-test-example/unit-test-example/test/numbers-validator/isNumberEven.spec.js",
           "file": "/test/numbers-validator/isNumberEven.spec.js",
@@ -288,7 +288,7 @@
               "title": "should return true if integer is provided",
               "fullTitle": "Check isInteger method should return true if integer is provided",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -297,8 +297,8 @@
               "context": null,
               "code": "expect(validator.isInteger(4)).to.be.equal(true);",
               "err": {},
-              "uuid": "fdb1fd7f-03d6-45a4-8282-f5aa132b8f2d",
-              "parentUUID": "5fdc8a41-ab71-4884-a899-6208daf01005",
+              "uuid": "c13e859c-973e-40a7-982c-9ea550c4c15b",
+              "parentUUID": "b3aa69cc-f139-4a37-a7f9-07bfa9f1d4f8",
               "isHook": false,
               "skipped": false
             },
@@ -315,21 +315,21 @@
               "context": null,
               "code": "expect(() => {\n  validator.isInteger('6');\n}).to.throw(`[6] is not a number`);",
               "err": {},
-              "uuid": "316ee914-9c89-4072-b882-1c4b7bd39a75",
-              "parentUUID": "5fdc8a41-ab71-4884-a899-6208daf01005",
+              "uuid": "975bb8fb-bcd8-4a44-86d7-23e24555144c",
+              "parentUUID": "b3aa69cc-f139-4a37-a7f9-07bfa9f1d4f8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fdb1fd7f-03d6-45a4-8282-f5aa132b8f2d",
-            "316ee914-9c89-4072-b882-1c4b7bd39a75"
+            "c13e859c-973e-40a7-982c-9ea550c4c15b",
+            "975bb8fb-bcd8-4a44-86d7-23e24555144c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
