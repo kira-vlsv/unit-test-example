@@ -36,6 +36,11 @@ jobs:
       with:
         ref: gh-pages
         path: gh-pages
+        
+    - name: Move files
+      run: |
+        mkdir ./mochawesome-report
+        mv ./mochawesome-report/mochawesome.html ./mochawesome-report/
     
     - name: Publish Report
       if: always()
