@@ -1,5 +1,11 @@
 # unit-test-example
-Unit test with JS, mocha, chai, mochawesome, husky, c8
+Unit test with:
+1. JS
+2. mocha - test runner
+3. chai - assertions
+4. mochawesome - reporting
+5. husky - code style
+6. c8 - test coverage
 
 <p>npm test - to run tests</p> 
 <p>npm run coverage - to check coverage</p>
