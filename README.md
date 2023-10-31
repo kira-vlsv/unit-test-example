@@ -5,12 +5,13 @@ Unit test with:
 3. chai - assertions
 4. mochawesome - reporting
 5. husky - code style
-6. c8 - test coverage
+6. c8 - code coverage
 
+### Run tests
 <p>npm test - to run tests</p> 
 <p>npm run coverage - to check coverage</p>
 
-## Check code style:
+### Check code style:
 1. npm run prepare
 2. npx husky add .husky/pre-commit "npm run lint"
 3. try to commit changes
